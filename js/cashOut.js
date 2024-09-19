@@ -8,8 +8,10 @@ document.getElementById('btn-cash-out').addEventListener('click', function(event
 
         document.getElementById('current-balance').innerText = newBalance;
         
+        document.getElementById('minus-amount').value = '';
     }
     else{
         alert("Please Input Correct PIN.");
     }
+    document.getElementById('pin-minus').value = '';
 })

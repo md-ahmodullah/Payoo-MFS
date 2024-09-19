@@ -7,9 +7,12 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         const newBalance = addAmount + currentBalance;
 
         document.getElementById('current-balance').innerText = newBalance;
+
+        document.getElementById('add-amount').value = '';
         
     }
     else{
         alert("Please Input Correct PIN.");
     }
+    document.getElementById('pin').value = '';
 })
