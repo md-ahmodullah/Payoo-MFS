@@ -1,10 +1,10 @@
-document.getElementById('btn-add-money').addEventListener('click', function(event){
+document.getElementById('btn-cash-out').addEventListener('click', function(event){
     event.preventDefault();
-    const pin = document.getElementById('pin').value;
+    const pin = document.getElementById('pin-minus').value;
     if (pin == '1234') {
-        const addAmount = Number(document.getElementById('add-amount').value);
+        const minusAmount = Number(document.getElementById('minus-amount').value);
         const currentBalance = Number(document.getElementById('current-balance').innerText);
-        const newBalance = addAmount + currentBalance;
+        const newBalance = currentBalance - minusAmount;
 
         document.getElementById('current-balance').innerText = newBalance;
         
